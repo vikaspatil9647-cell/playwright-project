@@ -13,11 +13,13 @@ export class LoginPageLocators {
   readonly usernameInput: Locator;
   readonly passwordInput: Locator;
   readonly loginButton: Locator;
+  readonly loginButton2: Locator;
 
   constructor(page: Page) {
-    this.usernameInput = page.locator('#username');
-    this.passwordInput = page.locator('#password');
+    this.usernameInput = page.getByLabel('Email ID / Username');
+    this.passwordInput = page.locator('//input[@placeholder="Enter your password"]');
     this.loginButton = page.getByRole('link', { name: 'Login' });
+    this.loginButton2 = page.locator('button.btn-primary.loginButton');
   }
 }
 

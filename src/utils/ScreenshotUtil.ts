@@ -11,3 +11,35 @@
 //     }
 //   }
 // }
+
+// import { Page } from '@playwright/test';
+
+// export class ScreenshotUtil {
+//   static async captureScreenshot(
+//     page: Page,
+//     fileName: string
+//   ): Promise<void> {
+//     await page.screenshot({
+//       path: `screenshots/${fileName}.png`,
+//       fullPage: true
+//     });
+//   }
+// }
+
+// 
+
+
+
+import { Page } from '@playwright/test';
+
+export class ScreenshotUtil {
+  static async captureScreenshot(
+    page: Page,
+    fileName: string
+  ): Promise<void> {
+    await page.screenshot({
+      path: `test-results/screenshots/${fileName}.png`,
+      fullPage: true
+    });
+  }
+}

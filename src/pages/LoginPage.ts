@@ -13,6 +13,7 @@ export class LoginPage {
     await this.locators.loginButton.click();
     await this.locators.usernameInput.fill(username);
     await this.locators.passwordInput.fill(password);
+    await this.locators.loginButton2.click();
     
   }
 }
