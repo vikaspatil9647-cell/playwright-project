@@ -11,6 +11,7 @@ test('Valid login test', async ({ page }) => {
     await loginPage.login('vikaspatil9647@gmail.com' , 'Tester@123');
      //await loginPage.enterUsername('testuser');
 //   await loginPage.enterPassword('password123');
+  console.log("New changes merged");
   
 
  await ScreenshotUtil.captureScreenshot(page, 'LoginTestResult');
