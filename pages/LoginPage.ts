@@ -15,7 +15,7 @@ export class LoginPage {
     await this.locators.passwordInput.fill(password);
     await this.locators.loginButton2.click();
 
-    console.log("vikuuu");
+    console.log("vikuuu1");
     
   }
 }
