@@ -14,8 +14,8 @@ export class LoginPage {
     await this.locators.usernameInput.fill(username);
     await this.locators.passwordInput.fill(password);
     await this.locators.loginButton2.click();
-    
-    
+
+    console.log("viku");
     
   }
 }
