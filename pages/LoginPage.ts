@@ -16,6 +16,6 @@ export class LoginPage {
     await this.locators.loginButton2.click();
 
     console.log("vikuuu1");
-    
+    console.log("vikuuu2");
   }
 }
